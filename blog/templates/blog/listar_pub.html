@@ -1,0 +1,14 @@
+<html>
+    <head>
+        <title>Django Girls blog</title>
+    </head>
+    <body>
+      {% for p in pubs %}
+        <div>
+            <p>publicado: {{p.fecha_publicacion}}</p>
+            <h2><a href="">{{p.titulo}}</a></h2>
+            <p>{{p.texto}}</p>
+        </div>
+    {% endfor %}
+    </body>
+</html>
